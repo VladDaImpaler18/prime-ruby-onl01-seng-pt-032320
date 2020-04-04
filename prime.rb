@@ -1,8 +1,8 @@
 def prime?(input)
-  isitprime=false
+  tic=0
   if input > 1
     (2..input).each{ |n|
-    input % n == 0 ? isitprime = true : isitprime = false}
+    input % n == 0 ?  tic+=1 : nil}
   end
-  return isitprime
+  tic == 1 ? return true : return false
 end
