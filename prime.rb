@@ -4,5 +4,5 @@ def prime?(input)
     (2..input).each{ |n|
     input % n == 0 ?  tic+=1 : nil}
   end
-  tic == 1 ? return true : return false
+  tic == 1 ? true : false
 end
